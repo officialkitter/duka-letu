@@ -1,0 +1,16 @@
+{
+  "name": "duka-letu",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Offline-first, single-database multi-tenant cloud-hybrid POS (apps/web on Vercel, apps/api on Railway, Supabase Postgres)",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "install:all": "npm --prefix apps/api install && npm --prefix apps/web install && npm --prefix apps/mobile install",
+    "dev:api": "npm --prefix apps/api run dev",
+    "dev:api:mock": "npm --prefix apps/api run dev:mock",
+    "dev:web": "npm --prefix apps/web run dev",
+    "dev:mobile": "npm --prefix apps/mobile start",
+    "android": "npm --prefix apps/mobile run android:build",
+    "typecheck": "npm --prefix apps/api run typecheck && npm --prefix apps/web run typecheck && npm --prefix apps/mobile run typecheck"
+  }
+}

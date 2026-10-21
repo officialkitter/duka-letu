@@ -1,0 +1,33 @@
+{
+  "expo": {
+    "name": "DukaLetu",
+    "slug": "duka-letu",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "duka-letu",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "backgroundColor": "#F6F7F1"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.dukaletu.pos",
+      "adaptiveIcon": {
+        "backgroundColor": "#164A3A",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-sqlite",
+      "./plugins/withWindowsCmake"
+    ]
+  }
+}
